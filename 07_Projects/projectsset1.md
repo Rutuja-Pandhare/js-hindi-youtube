@@ -8,7 +8,7 @@
 ## project 1
 
 ```javascript
-console.log("rutuja);
+console.log('rutuja');
 
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
@@ -63,5 +63,21 @@ form.addEventListener('submit',function(e){
     }
  
 });
+
+```
+
+## project 3 solution code
+```javascript
+const clock=document.getElementById('clock')
+//const clock=document.querySelectorAll('clock')
+
+
+
+setInterval(function(){
+  let date = new Date()
+  //console.log(date.toLocaleTimeString());
+  clock.innerHTML=date.toLocaleTimeString()
+},1000)
+
 
 ```
